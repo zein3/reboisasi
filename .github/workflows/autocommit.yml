@@ -11,6 +11,8 @@ on:
 
 jobs:
   auto_commit:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: DEBUG 
