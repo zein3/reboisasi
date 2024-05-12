@@ -13,6 +13,7 @@ jobs:
   auto_commit:
     permissions:
       contents: write
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - name: DEBUG 
@@ -53,3 +54,4 @@ jobs:
         with:
           directory: "."
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
